@@ -1,6 +1,8 @@
-from ubuntu:latest
+from alpine:latest
+
+
+RUN apk --no-cache add python3
 
 COPY test_python.py .
 
-RUN apt-get -y update && apt-get -y install python3
 RUN python test_python.py
