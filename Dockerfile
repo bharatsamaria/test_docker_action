@@ -1,4 +1,4 @@
-from ubunut:latest
+from ubuntu:latest
 
 COPY test_python.py .
 
